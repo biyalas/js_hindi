@@ -20,3 +20,23 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
+
+//stack(primitive),heap(non-primitive)
+//stack gives copies of original value
+let myGit = "biyalas"
+let anotherName = myGit
+anotherName = "javascript"
+// console.log(anotherName);
+// console.log(myGit);
+
+//heap stores value as reference to the original value
+let userOne = {
+    mail: "user@gmail.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.mail = "snehabiyala@gmail.com" 
+console.log(userTwo);
+
+
+
